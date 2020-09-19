@@ -1,38 +1,94 @@
+body {
+	font-family: 'lato';
+}
+
 .App {
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	width: 100%;
+	margin: auto;
+	background: rgb(248, 248, 248);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media only screen and (min-width: 1000px) {
+	.container {
+		max-width: 1000px;
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.stage h2 {
+	color: #1d3557;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badge {
+	border-radius: 8px;
+	background: #eeeeee;
+	padding: 5px;
+	font-size: 16px;
+	margin-left: 10px;
+	display: inline-block;
+}
+.title {
+	height: 150px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.stage {
+	height: 300px;
+	padding: 5px;
+}
+
+.stage1 {
+	background: #fca311;
+}
+.stage2 {
+	background: #e63946;
+}
+.stage3 {
+	background: #457b9d;
+}
+
+.boxes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.box {
+	height: 70px;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	padding: 5px;
+	position: relative;
+	width: 70px;
+}
+
+.finish {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fas {
+	color: rgb(27, 241, 27);
 }
